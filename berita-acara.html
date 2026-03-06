@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berita Acara • Sagulubbek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="91.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Beranda">
+        <img class="brand-img" src="logo.png" alt="Sagulubbek" onerror="this.onerror=null;this.src='91.png'">
+        <span class="brand-text">Sagulubbek</span>
+      </a>
+      <button class="nav-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+      <nav class="site-nav" data-nav>
+        <a href="data-mahasiswa.html" class="nav-link">Data Mahasiswa</a>
+        <a href="foto.html" class="nav-link">Foto</a>
+        <a href="himapedes.html" class="nav-link">HIMAPEDES</a>
+        <a href="komunitas-mentawai.html" class="nav-link">Komunitas Mentawai</a>
+        <a href="tentang.html" class="nav-link">Tentang</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-figure">
+        <img class="hero-thumb" src="B.jpeg" alt="Berita Acara" onerror="this.onerror=null;this.src='B.jpeg'">
+        <div class="hero-overlay">
+          <div>
+            <h1 class="hero-title">Berita Acara</h1>
+            <p class="hero-subtitle">Catatan resmi kegiatan dan kesepakatan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="container">
+    <div class="srch"><input type="search" id="q" placeholder="Cari judul, lokasi, atau nomor..."><a href="#" class="btn btn-secondary" id="btnCari">Cari</a></div>
+    <div class="grid cards" id="ba"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-profile">
+          <img class="footer-avatar" src="profil.png" alt="Boas Sababang" onerror="this.onerror=null;this.src='91.png'">
+          <div class="footer-meta">
+            <strong>Boas Sababang</strong>
+            <div class="footer-role">Redaktur</div>
+            <div class="social-links">
+              <a href="https://instagram.com/boas_sababang" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig-ba" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f58529"/><stop offset="0.5" stop-color="#dd2a7b"/><stop offset="1" stop-color="#8134af"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="5" fill="url(#ig-ba)"/><circle cx="12" cy="12" r="4" fill="#fff"/><circle cx="17" cy="7" r="1.5" fill="#fff"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://facebook.com/boas.sababang" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#1877F2"/><path d="M15 8h-2c-.6 0-1 .4-1 1v2h3l-.4 3H12v7H9v-7H7V11h2V9c0-2 1.2-3 3-3h3z" fill="#fff"/></svg>
+                <span>Facebook</span>
+              </a>
+              <a href="mailto:redaksi@sagulubbek.id">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3" fill="#0ea5e9"/><path d="M4 7l8 6 8-6" fill="none" stroke="#fff" stroke-width="2"/></svg>
+                <span>Email</span>
+              </a>
+              <a href="https://wa.me/6282389488187" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-7.8 13.5L3 22l6.7-1.8A9 9 0 1 0 12 2z" fill="#25D366"/><path d="M16.2 13.6c-.2.6-.9 1-1.5 1.1-.4.1-1 .1-2-.3-1.7-.7-2.8-2.4-2.9-2.5-.1-.1-.7-.9-.7-1.7 0-.8.4-1.2.6-1.4.2-.2.4-.3.6-.2.2 0 .5 0 .7.6.2.6.5 1.4.5 1.5 0 .1 0 .3-.1.4-.1.2-.2.3-.3.4-.1.1-.2.2 0 .5.2.3.8 1.2 1.8 1.6 1 .4 1.2.3 1.5 0s.6-.8.8-1c.2-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.1.5.2s.2.8 0 1.4z" fill="#fff"/></svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Navigasi</h3>
+        <ul class="footer-nav">
+          <li><a href="data-mahasiswa.html">Data Mahasiswa</a></li>
+          <li><a href="foto.html">Foto</a></li>
+          <li><a href="himapedes.html">HIMAPEDES</a></li>
+          <li><a href="komunitas-mentawai.html">Komunitas Mentawai</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Kategori</h3>
+        <ul class="footer-nav">
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="opini.html">Opini</a></li>
+          <li><a href="esai.html">Esai</a></li>
+          <li><a href="liputan.html">Liputan</a></li>
+          <li><a href="kilas.html">Kilas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright"><span>© <span id="year"></span> Sagulubbek</span><span>HTML • CSS • JavaScript</span></div>
+  </footer>
+  <script src="./main.js"></script>
+  <script>
+    var BA=[
+      {
+        t:"Rapat Koordinasi Program",
+        date:"2026-03-03",
+        img:"B.jpeg",
+        lead:"Menyepakati jadwal pendampingan belajar, penanggung jawab, dan indikator capaian.",
+        body:[
+          "Rapat koordinasi membahas jadwal mingguan, pembagian wilayah dampingan, serta indikator yang disepakati bersama.",
+          "Setiap koordinator menyampaikan rencana pelaksanaan dan kebutuhan dukungan logistik untuk memastikan keberlanjutan program."
+        ],
+        author:{n:"Boas Sababang",avatar:"Boas.jpeg"}
+      },
+      {
+        t:"Serah Terima Donasi Buku",
+        date:"2026-03-01",
+        img:"B.jpeg",
+        lead:"Pencatatan jumlah buku, kondisi, dan rencana katalogisasi untuk akses publik.",
+        body:[
+          "Serah terima meliputi verifikasi kondisi buku, penyusunan daftar inventaris, serta penentuan relawan katalogisasi.",
+          "Koleksi akan disusun per kategori agar memudahkan pencarian dan peminjaman."
+        ],
+        author:{n:"Redaksi Sagulubbek",avatar:"profil.png"}
+      },
+      {
+        t:"MoU Pelatihan Guru",
+        date:"2026-02-20",
+        img:"B.jpeg",
+        lead:"Kerjasama pelatihan perangkat ajar selama 3 bulan untuk sekolah mitra.",
+        body:[
+          "MoU menetapkan topik pelatihan, jadwal sesi, serta mekanisme evaluasi capaian.",
+          "Fokus pelatihan pada asesmen formatif dan pembelajaran aktif di kelas."
+        ],
+        author:{n:"Boas Sababang",avatar:"Boas.jpeg"}
+      },{
+        t:"MoU Pelatihan Guru",
+        date:"2026-02-20",
+        img:"B.jpeg",
+        lead:"Kerjasama pelatihan perangkat ajar selama 3 bulan untuk sekolah mitra.",
+        body:[
+          "MoU menetapkan topik pelatihan, jadwal sesi, serta mekanisme evaluasi capaian.",
+          "Fokus pelatihan pada asesmen formatif dan pembelajaran aktif di kelas."
+        ],
+        author:{n:"Boas Sababang",avatar:"Boas.jpeg"}
+      }
+    ];
+    function sid(x){return ("ba-"+String(x.t||"").toLowerCase().replace(/[^a-z0-9]+/g,"-")).replace(/-+/g,"-").replace(/(^-|-$)/g,"")}
+    function fd(s){try{var d=new Date(s);return d.toLocaleDateString('id-ID',{year:'numeric',month:'long',day:'numeric'})}catch(e){return s}}
+    function render(q){
+      var root=document.getElementById('ba');root.innerHTML='';
+      var f=(q||'').toLowerCase();
+      BA.filter(function(x){
+        var text=[x.t||"",x.lead||"", (x.body||[]).join(" "), (x.author&&x.author.n)||""].join(" ");
+        return text.toLowerCase().includes(f);
+      }).forEach(function(x){
+        var card=document.createElement('article');card.className='card';card.id=sid(x);
+        var img=document.createElement('img');img.className='card-media';img.alt=x.t;img.src=x.img||'';
+        var body=document.createElement('div');body.className='card-body';
+        var title=document.createElement('h3');title.className='card-title';title.textContent=x.t;
+        var details=document.createElement('div');details.hidden=true;
+        var meta=document.createElement('div');meta.className='article-meta';
+        var chipAuthor=document.createElement('span');chipAuthor.className='author-chip';
+        var av=document.createElement('img');av.className='author-avatar';av.alt=x.author&&x.author.n||'Penulis';av.src=(x.author&&x.author.avatar)||'profil.png';av.onerror=function(){this.onerror=null;this.src='91.png'};
+        var sp=document.createElement('span');sp.textContent=(x.author&&x.author.n||'')+' • '+fd(x.date||'');
+        chipAuthor.append(av,sp);meta.append(chipAuthor);
+        var p=document.createElement('p');p.className='card-desc';p.textContent=x.lead||'';
+        var article=document.createElement('div');article.className='article-body';(x.body||[]).forEach(function(par){var pp=document.createElement('p');pp.textContent=par;article.append(pp)});
+        var share=document.createElement('div');share.className='share-row';
+        var wa=document.createElement('a');wa.className='btn-share';wa.href='#';wa.textContent='WhatsApp';wa.setAttribute('aria-label','Bagikan WhatsApp');
+        var fb=document.createElement('a');fb.className='btn-share';fb.href='#';fb.textContent='Facebook';fb.setAttribute('aria-label','Bagikan Facebook');
+        wa.addEventListener('click',function(e){e.preventDefault();var url=location.href.split('#')[0]+'#'+sid(x);var txt=x.t+' — '+url;window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank','noopener')});
+        fb.addEventListener('click',function(e){e.preventDefault();var url=location.href.split('#')[0]+'#'+sid(x);window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url),'_blank','noopener')});
+        share.append(wa,fb);
+        details.append(meta,p,article,share);
+        var btn=document.createElement('a');btn.href='#';btn.className='btn btn-secondary';btn.textContent='Baca Selengkapnya';
+        btn.addEventListener('click',function(e){e.preventDefault();var open=details.hidden===false;details.hidden=open;btn.textContent=open?'Baca Selengkapnya':'Tutup'});
+        title.style.cursor='pointer';img.style.cursor='pointer';
+        function openDetails(){if(details.hidden){details.hidden=false;btn.textContent='Tutup'}}
+        title.addEventListener('click',function(e){e.preventDefault();openDetails()});
+        img.addEventListener('click',function(e){e.preventDefault();openDetails()});
+        body.append(title,btn,details);card.append(img,body);root.append(card);
+      });
+    }
+    document.getElementById('btnCari').addEventListener('click',function(e){e.preventDefault();render(document.getElementById('q').value)});
+    document.getElementById('q').addEventListener('input',function(){render(this.value)});
+    render('');
+    function focusFromHash(){var id=location.hash?location.hash.slice(1):'';if(!id)return;var el=document.getElementById(id);if(!el)return;el.scrollIntoView({behavior:'smooth',block:'start'});el.style.boxShadow='0 0 0 3px rgba(34,211,238,.6)';setTimeout(function(){el.style.boxShadow=''},1600)}
+    window.addEventListener('load',focusFromHash);
+    window.addEventListener('hashchange',focusFromHash);
+  </script>
+</body>
+</html>

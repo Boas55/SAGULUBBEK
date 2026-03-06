@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HIMAPEDES • Sagulubbek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="91.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Beranda">
+        <img class="brand-img" src="logo.png" alt="Sagulubbek" onerror="this.onerror=null;this.src='91.png'">
+        <span class="brand-text">Sagulubbek</span>
+      </a>
+      <button class="nav-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+      <nav class="site-nav" data-nav>
+        <a href="data-mahasiswa.html" class="nav-link">Data Mahasiswa</a>
+        <a href="foto.html" class="nav-link">Foto</a>
+        <a href="himapedes.html" class="nav-link">HIMAPEDES</a>
+        <a href="komunitas-mentawai.html" class="nav-link">Komunitas Mentawai</a>
+        <a href="tentang.html" class="nav-link">Tentang</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-figure">
+        <img class="hero-thumb" src="B.jpeg" alt="HIMAPEDES" onerror="this.onerror=null;this.src='B.jpeg'">
+        <div class="hero-overlay">
+          <div>
+            <h1 class="hero-title">HIMAPEDES</h1>
+            <p class="hero-subtitle">Program dan status kegiatan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="container">
+    <h2 class="section-title">Berita Acara</h2>
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-body">
+        <h3 class="card-title">Arsip Berita Acara</h3>
+        <p class="card-desc">Kumpulan artikel berita acara dengan foto, penulis, tanggal, dan tombol bagikan.</p>
+        <a class="btn btn-primary" href="berita-acara.html" aria-label="Buka Berita Acara">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" style="vertical-align:middle;margin-right:6px">
+            <path d="M6 2h9l3 3v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#fff"/>
+            <path d="M9 8h6M9 12h6M9 16h4" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Buka Berita Acara</span>
+        </a>
+      </div>
+    </div>
+    <h2 class="section-title">Program</h2>
+    <div class="list">
+      <div class="list-item"><strong>Pendampingan Belajar</strong><span class="chip">Aktif</span></div>
+      <div class="list-item"><strong>Pelatihan Keterampilan</strong><span class="chip">Aktif</span></div>
+      <div class="list-item"><strong>Beasiswa Internal</strong><span class="chip">Perencanaan</span></div>
+    </div>
+    <h2 class="section-title">Struktur Kepengurusan</h2>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Struktur Kepengurusan</h3>
+        <p class="card-desc">Peta konsep kepengurusan dan devisi lengkap.</p>
+        <a class="btn btn-primary" href="kepengurusan.html" aria-label="Buka Struktur Kepengurusan">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" style="vertical-align:middle;margin-right:6px">
+            <path d="M10 3h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" fill="#fff"/>
+            <path d="M5 15h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm10 0h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" fill="#fff"/>
+            <path d="M12 9v3M12 12H7m5 0h5" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span>Buka Struktur</span>
+        </a>
+      </div>
+    </div>
+    <h2 class="section-title">Dokumen PDF</h2>
+    <div class="srch"><input type="search" id="qDoc" placeholder="Cari dokumen..."><a href="#" class="btn btn-secondary" id="btnCariDoc">Cari</a></div>
+    <div class="grid cards" id="docs"></div>
+    <h2 class="section-title">Bergabung WhatsApp</h2>
+    <div id="join"></div>
+    <h2 class="section-title">Tautan Dokumen</h2>
+    <div class="srch"><input type="search" id="qLink" placeholder="Cari tautan..."><a href="#" class="btn btn-secondary" id="btnCariLink">Cari</a></div>
+    <div class="grid cards" id="links"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-profile">
+          <img class="footer-avatar" src="profil.png" alt="Boas Sababang" onerror="this.onerror=null;this.src='91.png'">
+          <div class="footer-meta">
+            <strong>Boas Sababang</strong>
+            <div class="footer-role">Redaktur</div>
+            <div class="social-links">
+              <a href="https://instagram.com/boas_sababang" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig-hpd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f58529"/><stop offset="0.5" stop-color="#dd2a7b"/><stop offset="1" stop-color="#8134af"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="5" fill="url(#ig-hpd)"/><circle cx="12" cy="12" r="4" fill="#fff"/><circle cx="17" cy="7" r="1.5" fill="#fff"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://facebook.com/boas.sababang" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#1877F2"/><path d="M15 8h-2c-.6 0-1 .4-1 1v2h3l-.4 3H12v7H9v-7H7V11h2V9c0-2 1.2-3 3-3h3z" fill="#fff"/></svg>
+                <span>Facebook</span>
+              </a>
+              <a href="mailto:redaksi@sagulubbek.id">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3" fill="#0ea5e9"/><path d="M4 7l8 6 8-6" fill="none" stroke="#fff" stroke-width="2"/></svg>
+                <span>Email</span>
+              </a>
+              <a href="https://wa.me/6282389488187" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-7.8 13.5L3 22l6.7-1.8A9 9 0 1 0 12 2z" fill="#25D366"/><path d="M16.2 13.6c-.2.6-.9 1-1.5 1.1-.4.1-1 .1-2-.3-1.7-.7-2.8-2.4-2.9-2.5-.1-.1-.7-.9-.7-1.7 0-.8.4-1.2.6-1.4.2-.2.4-.3.6-.2.2 0 .5 0 .7.6.2.6.5 1.4.5 1.5 0 .1 0 .3-.1.4-.1.2-.2.3-.3.4-.1.1-.2.2 0 .5.2.3.8 1.2 1.8 1.6 1 .4 1.2.3 1.5 0s.6-.8.8-1c.2-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.1.5.2s.2.8 0 1.4z" fill="#fff"/></svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Navigasi</h3>
+        <ul class="footer-nav">
+          <li><a href="./data-mahasiswa.html">Data Mahasiswa</a></li>
+          <li><a href="./foto.html">Foto</a></li>
+          <li><a href="./himapedes.html">HIMAPEDES</a></li>
+          <li><a href="./komunitas-mentawai.html">Komunitas Mentawai</a></li>
+          <li><a href="./tentang.html">Tentang</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Kategori</h3>
+        <ul class="footer-nav">
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="opini.html">Opini</a></li>
+          <li><a href="esai.html">Esai</a></li>
+          <li><a href="liputan.html">Liputan</a></li>
+          <li><a href="kilas.html">Kilas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <span>© <span id="year"></span> Sagulubbek</span>
+      <span>HTML • CSS • JavaScript</span>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+  <script>
+    var DOCS=[
+      {t:"Panduan Program",file:"KIP.docx",desc:"Ringkasan alur program dan peran.",author:{n:"Redaksi Sagulubbek",avatar:"profil.png"},date:"2026-03-05"},
+      {t:"Formulir Kegiatan",file:"docs/formulir.pdf",desc:"Formulir pelaksanaan dan evaluasi.",author:{n:"Boas Sababang",avatar:"Boas.jpeg"},date:"2026-03-02"},
+      {t:"Panduan Program",file:"KIP.docx",desc:"Ringkasan alur program dan peran.",author:{n:"Redaksi Sagulubbek",avatar:"profil.png"},date:"2026-03-05"},
+      {t:"Formulir Kegiatan",file:"docs/formulir.pdf",desc:"Formulir pelaksanaan dan evaluasi.",author:{n:"Boas Sababang",avatar:"Boas.jpeg"},date:"2026-03-02"},
+      {t:"Panduan Program",file:"KIP.docx",desc:"Ringkasan alur program dan peran.",author:{n:"Redaksi Sagulubbek",avatar:"profil.png"},date:"2026-03-05"},
+      {t:"Formulir Kegiatan",file:"docs/formulir.pdf",desc:"Formulir pelaksanaan dan evaluasi.",author:{n:"Boas Sababang",avatar:"Boas.jpeg"},date:"2026-03-02"}
+    ];
+    var JOIN={wa:{t:"Grup WhatsApp HIMAPEDES",link:"https://chat.whatsapp.com/I7pm8PBauw2BWQrnOMn0wi",desc:"Bergabung dengan grup untuk informasi kegiatan."}};
+    var LINKS=[
+      {t:"Template Laporan Kegiatan",url:"https://drive.google.com/drive/folders/1rYhXxqvfYCdJw44liMm6zNsNRriP75DJ?usp=sharing",desc:"Dokumen template laporan untuk relawan.",author:{n:"Redaksi Sagulubbek",avatar:"profil.png"},date:"2026-03-05"},
+      {t:"Guideline Media Sosial",url:"https://drive.google.com/drive/folders/1o_C35qxUpFAkH5uumYpqB1gDY-p9Gzj2?usp=sharing",desc:"Pedoman unggah konten dan visual.",author:{n:"Boas Sababang",avatar:"Boas.jpeg"},date:"2026-03-02"}
+    ];
+    function fdDoc(s){try{var d=new Date(s);return d.toLocaleDateString('id-ID',{year:'numeric',month:'long',day:'numeric'})}catch(e){return s}}
+    function renderDocs(q){
+      var root=document.getElementById('docs');if(!root)return;root.innerHTML='';var f=(q||'').toLowerCase();
+      DOCS.filter(function(x){return (x.t+(x.desc||'')+(x.author&&x.author.n||'')).toLowerCase().includes(f)}).forEach(function(x){
+        var card=document.createElement('article');card.className='card';
+        var body=document.createElement('div');body.className='card-body';
+        var h3=document.createElement('h3');h3.className='card-title';h3.textContent=x.t;
+        var meta=document.createElement('div');meta.className='article-meta';
+        var chip=document.createElement('span');chip.className='author-chip';
+        var av=document.createElement('img');av.className='author-avatar';av.alt=x.author&&x.author.n||'Penulis';av.src=(x.author&&x.author.avatar)||'profil.png';av.onerror=function(){this.onerror=null;this.src='91.png'};
+        var sp=document.createElement('span');sp.textContent=(x.author&&x.author.n||'')+' • '+fdDoc(x.date||'');
+        chip.append(av,sp);meta.append(chip);
+        var p=document.createElement('p');p.className='card-desc';p.textContent=x.desc||'';
+        var actions=document.createElement('div');actions.className='share-row';
+        var btn=document.createElement('a');btn.className='btn btn-primary';btn.href=x.file||'#';btn.setAttribute('download','');btn.target='_blank';btn.rel='noopener';btn.innerHTML='<svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" style="vertical-align:middle;margin-right:6px"><path d="M12 3v10" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/><path d="M8 11l4 4 4-4" stroke="#0f172a" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M5 19h14" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/></svg><span>Unduh PDF</span>';
+        actions.append(btn);
+        body.append(h3,meta,p,actions);card.append(body);root.append(card);
+      });
+    }
+    document.getElementById('btnCariDoc').addEventListener('click',function(e){e.preventDefault();renderDocs(document.getElementById('qDoc').value)});
+    document.getElementById('qDoc').addEventListener('input',function(){renderDocs(this.value)});
+    renderDocs('');
+    (function(){var root=document.getElementById('join');if(root){root.innerHTML='';var card=document.createElement('article');card.className='card';var body=document.createElement('div');body.className='card-body';var h3=document.createElement('h3');h3.className='card-title';h3.textContent=JOIN.wa&&JOIN.wa.t||'Grup WhatsApp';var p=document.createElement('p');p.className='card-desc';p.textContent=(JOIN.wa&&JOIN.wa.desc)||'';var btn=document.createElement('a');btn.className='btn btn-primary';btn.href=(JOIN.wa&&JOIN.wa.link)||'#';btn.target='_blank';btn.rel='noopener';btn.setAttribute('aria-label','Gabung WhatsApp');btn.innerHTML='<svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" style=\"vertical-align:middle;margin-right:6px\"><path d=\"M12 2a9 9 0 0 0-7.8 13.5L3 22l6.7-1.8A9 9 0 1 0 12 2z\" fill=\"#fff\"/><path d=\"M16.2 13.6c-.2.6-.9 1-1.5 1.1-.4.1-1 .1-2-.3-1.7-.7-2.8-2.4-2.9-2.5-.1-.1-.7-.9-.7-1.7 0-.8.4-1.2.6-1.4.2-.2.4-.3.6-.2.2 0 .5 0 .7.6.2.6.5 1.4.5 1.5 0 .1 0 .3-.1.4-.1.2-.2.3-.3.4-.1.1-.2.2 0 .5.2.3.8 1.2 1.8 1.6 1 .4 1.2.3 1.5 0s.6-.8.8-1c.2-.2.3-.2.5-.1.2.1 1.3.6 1.5.7.2.1.4.1.5.2s.2.8 0 1.4z\" fill=\"#0f172a\"/></svg><span>Gabung WhatsApp</span>';body.append(h3,p,btn);card.append(body);root.append(card)}})();
+    (function(){var root=document.getElementById('links');if(root){function fdDoc2(s){try{var d=new Date(s);return d.toLocaleDateString('id-ID',{year:'numeric',month:'long',day:'numeric'})}catch(e){return s}}function renderLinks(q){root.innerHTML='';var f=(q||'').toLowerCase();LINKS.filter(function(x){return (x.t+(x.desc||'')+(x.author&&x.author.n||'')).toLowerCase().includes(f)}).forEach(function(x){var card=document.createElement('article');card.className='card';var body=document.createElement('div');body.className='card-body';var h3=document.createElement('h3');h3.className='card-title';h3.textContent=x.t;var meta=document.createElement('div');meta.className='article-meta';var chip=document.createElement('span');chip.className='author-chip';var av=document.createElement('img');av.className='author-avatar';av.alt=x.author&&x.author.n||'Penulis';av.src=(x.author&&x.author.avatar)||'profil.png';av.onerror=function(){this.onerror=null;this.src='91.png'};var sp=document.createElement('span');sp.textContent=(x.author&&x.author.n||'')+' • '+fdDoc2(x.date||'');chip.append(av,sp);meta.append(chip);var p=document.createElement('p');p.className='card-desc';p.textContent=x.desc||'';var actions=document.createElement('div');actions.className='share-row';var btn=document.createElement('a');btn.className='btn btn-secondary';btn.href=x.url||'#';btn.target='_blank';btn.rel='noopener';btn.innerHTML='<svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" style=\"vertical-align:middle;margin-right:6px\"><path d=\"M7 7h10v10H7z\" fill=\"#0f172a\"/></svg><span>Buka Dokumen</span>';actions.append(btn);body.append(h3,meta,p,actions);card.append(body);root.append(card)})}var b=document.getElementById('btnCariLink');var i=document.getElementById('qLink');if(b&&i){b.addEventListener('click',function(e){e.preventDefault();renderLinks(i.value)});i.addEventListener('input',function(){renderLinks(this.value)})}renderLinks('')}})();
+  </script>
+</body>
+</html>

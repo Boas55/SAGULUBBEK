@@ -1,0 +1,6 @@
+[
+  { "nama": "Rina Setia", "nim": "2018001", "ttl": "Padang, 12-01-2000", "jurusan": "Informatika", "universitas": "Universitas Andalas", "asal": "Padang" },
+  { "nama": "Andi Kurnia", "nim": "2018002", "ttl": "Bandung, 03-02-2000", "jurusan": "Hukum", "universitas": "Universitas Padjadjaran", "asal": "Bandung" },
+  { "nama": "Sari Lestari", "nim": "2019003", "ttl": "Depok, 10-05-2001", "jurusan": "Kedokteran", "universitas": "Universitas Indonesia", "asal": "Depok" },
+  { "nama": "Budi Prakoso", "nim": "2020004", "ttl": "Bogor, 22-07-2002", "jurusan": "Pertanian", "universitas": "IPB University", "asal": "Bogor" }
+]

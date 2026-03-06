@@ -1,0 +1,14 @@
+{
+  "k1": [
+    { "nama": "Andi Pratama", "ttl": "Tuapeijat, 12-01-2010", "smp": "SMP Negeri 1" },
+    { "nama": "Siti Rahma", "ttl": "Siberut, 03-02-2010", "smp": "SMP Harapan" }
+  ],
+  "k2": [
+    { "nama": "Budi Santoso", "ttl": "Sikakap, 14-03-2009", "smp": "SMP Negeri 2" },
+    { "nama": "Dewi Lestari", "ttl": "Saibi, 25-04-2009", "smp": "SMP Nusantara" }
+  ],
+  "k3": [
+    { "nama": "Rio Saputra", "ttl": "Mapinang, 06-05-2008", "smp": "SMP Negeri 3" },
+    { "nama": "Nadia Putri", "ttl": "Sioban, 17-06-2008", "smp": "SMP Sejahtera" }
+  ]
+}
